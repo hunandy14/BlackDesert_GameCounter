@@ -198,6 +198,7 @@
             this.textBox7.Size = new System.Drawing.Size(383, 25);
             this.textBox7.TabIndex = 25;
             this.textBox7.Text = "0";
+            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // pictureBox8
             // 
@@ -208,12 +209,13 @@
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox8.TabIndex = 26;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.Gen10k_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(935, 499);
+            this.ClientSize = new System.Drawing.Size(555, 141);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);

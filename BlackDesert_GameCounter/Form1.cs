@@ -16,26 +16,23 @@ namespace BlackDesert_GameCounter
         {
             InitializeComponent();
         }
-        
 
+        const float item0_coef = 10000;
+        const float item1_coef = 3000;
+        const float item2_coef = 1000;
+        const float item3_coef = 500;
+        const float item4_coef = 300;
+        const float item5_coef = 150;
 
-        const int item0_coef = 300;
-        const int item1_coef = 10000;
-        const int item2_coef = 5000;
-        const int item3_coef = 3000;
-        const int item4_coef = 1000;
-        const int item5_coef = 500;
+        float item0 = 0;
+        float item1 = 0;
+        float item2 = 0;
+        float item3 = 0;
+        float item4 = 0;
+        float item5 = 0;
+        float total = 0;
 
-        int item0 = 0;
-        int item1 = 0;
-        int item2 = 0;
-        int item3 = 0;
-        int item4 = 0;
-        int item5 = 0;
-
-        int total = 0;
-
-
+        bool gen10K_enable = true;
 
         private void Count_Total()
         {
@@ -47,6 +44,11 @@ namespace BlackDesert_GameCounter
                 item3 * item3_coef +
                 item4 * item4_coef +
                 item5 * item5_coef;
+
+            if (gen10K_enable)
+            {
+                total /= 10000;
+            }
 
             textBox7.Text = total.ToString();
         }
@@ -152,6 +154,12 @@ namespace BlackDesert_GameCounter
                 --item5;
             }
             textBox6.Text = item5.ToString();
+            Count_Total();
+        }
+
+        private void Gen10k_Click(object sender, EventArgs e)
+        {
+            gen10K_enable = !gen10K_enable;
             Count_Total();
         }
     }
