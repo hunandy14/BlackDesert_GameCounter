@@ -21,5 +21,17 @@ namespace BlackDesert_GameCounter
         {
 
         }
+
+        private void bt_clear(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                MessageBox.Show("left");
+            }
+            else
+            {
+                MessageBox.Show("right");
+            }
+        }
     }
 }
