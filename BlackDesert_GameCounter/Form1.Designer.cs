@@ -62,6 +62,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Lv0_MouseCkick);
             // 
             // pictureBox2
             // 
@@ -72,6 +73,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Lv1_MouseClick);
             // 
             // pictureBox3
             // 
@@ -82,6 +84,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Lv2_MouseClick);
             // 
             // pictureBox4
             // 
@@ -92,6 +95,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Lv3_MouseClick);
             // 
             // pictureBox5
             // 
@@ -102,6 +106,7 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Lv4_MouseClick);
             // 
             // pictureBox6
             // 
@@ -112,6 +117,7 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox6.TabIndex = 5;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Lv5_MouseClick);
             // 
             // pictureBox7
             // 
@@ -122,7 +128,7 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 6;
             this.pictureBox7.TabStop = false;
-            this.pictureBox7.MouseClick += new System.Windows.Forms.MouseEventHandler(this.bt_clear);
+            this.pictureBox7.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Bt_clear);
             // 
             // textBox1
             // 
@@ -186,10 +192,12 @@
             // 
             // textBox7
             // 
+            this.textBox7.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.textBox7.Location = new System.Drawing.Point(12, 107);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(383, 22);
+            this.textBox7.Size = new System.Drawing.Size(383, 25);
             this.textBox7.TabIndex = 25;
+            this.textBox7.Text = "0";
             // 
             // pictureBox8
             // 
