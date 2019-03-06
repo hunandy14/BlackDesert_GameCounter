@@ -1,5 +1,8 @@
 ﻿## BlackDesert_GameCounter
 黑色沙漠挖人蔘遊戲計數器，測試版。(還有許多功能想實現還在摸索中)
+下載位置：[BlackDesert_GameCounter](https://github.com/hunandy14/BlackDesert_GameCounter/raw/master/BlackDesert_GameCounter/bin/Release/BlackDesert_GameCounter.exe)
+
+<br><br>
 
 ### 使用說明
 #### 計數器增加
