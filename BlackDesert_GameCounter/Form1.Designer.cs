@@ -128,7 +128,7 @@
             this.pictureBox7.Image = global::BlackDesert_GameCounter.Properties.Resources.LVUser;
             this.pictureBox7.Location = new System.Drawing.Point(402, 12);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(110, 89);
+            this.pictureBox7.Size = new System.Drawing.Size(146, 120);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 6;
             this.pictureBox7.TabStop = false;
@@ -203,10 +203,10 @@
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox7.Location = new System.Drawing.Point(12, 107);
+            this.textBox7.Location = new System.Drawing.Point(143, 107);
             this.textBox7.Name = "textBox7";
             this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(348, 25);
+            this.textBox7.Size = new System.Drawing.Size(253, 25);
             this.textBox7.TabIndex = 25;
             this.textBox7.Text = "0";
             this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -214,9 +214,9 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::BlackDesert_GameCounter.Properties.Resources.moneyUnit;
-            this.pictureBox8.Location = new System.Drawing.Point(366, 102);
+            this.pictureBox8.Location = new System.Drawing.Point(402, 91);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox8.Size = new System.Drawing.Size(36, 41);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 26;
             this.pictureBox8.TabStop = false;
@@ -231,7 +231,7 @@
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(401, 102);
+            this.label1.Location = new System.Drawing.Point(19, 105);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 31);
@@ -244,7 +244,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(518, 139);
+            this.ClientSize = new System.Drawing.Size(559, 143);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.textBox7);
