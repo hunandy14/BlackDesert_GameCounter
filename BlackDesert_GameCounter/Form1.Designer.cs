@@ -236,7 +236,8 @@
             this.label1.Size = new System.Drawing.Size(225, 61);
             this.label1.TabIndex = 27;
             this.label1.Text = "00:00:00";
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
+            this.label1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Timer_MouseClick);
+            this.label1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.Timer_MouseDouClick);
             // 
             // Form1
             // 

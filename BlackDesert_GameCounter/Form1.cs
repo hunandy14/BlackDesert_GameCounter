@@ -71,9 +71,26 @@ namespace BlackDesert_GameCounter
             }
             Update_Time(timer_data);
         }
-        private void Label1_Click(object sender, EventArgs e)
+        private void Timer_MouseClick(object sender, MouseEventArgs e)
         {
-            timer1.Enabled = !timer1.Enabled;
+            if (e.Button == MouseButtons.Left)
+            {
+                timer1.Enabled = !timer1.Enabled;
+            }
+            else if (e.Button == MouseButtons.Right)
+            {
+                if (timer1.Enabled == false)
+                {
+                    timer_data.hou = 0;
+                    timer_data.min = 0;
+                    timer_data.sec = 0;
+                    Update_Time(timer_data);
+                }
+            }
+        }
+        private void Timer_MouseDouClick(object sender, MouseEventArgs e)
+        {
+
         }
         // ================================================================
         const float item0_coef = 10000;
@@ -211,6 +228,12 @@ namespace BlackDesert_GameCounter
             gen10K_enable = !gen10K_enable;
             Count_Total();
         }
+
+
+
+
+
+
         // ================================================================
 
     }
