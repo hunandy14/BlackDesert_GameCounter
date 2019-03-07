@@ -15,15 +15,73 @@ namespace BlackDesert_GameCounter
         public Form1()
         {
             InitializeComponent();
+            timer1.Interval = 1000;
+            timer1.Enabled = false;
         }
 
+        // ================================================================
+        // 計時器
+        // ================================================================
+        struct Timer_Data
+        {
+            public int hou;
+            public int min;
+            public int sec;
+        };
+        private void Update_Time(Timer_Data t)
+        {
+            int h=t.hou, m=t.min, s=t.sec;
+            string ss = "";
+
+            if (h < 10)
+            {
+                ss += "0";
+            }
+            ss += h.ToString();
+            ss += ":";
+            if (m < 10)
+            {
+                ss += "0";
+            }
+            ss += m.ToString();
+            ss += ":";
+            if (s<10)
+            {
+                ss += "0";
+            }
+            ss += s.ToString();
+            label1.Text = ss;
+        }
+
+
+        Timer_Data timer_data;
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+
+            timer_data.sec++;
+            if (timer_data.sec == 60)
+            {
+                timer_data.min++;
+                timer_data.sec = 0;
+            }
+            if (timer_data.min == 60)
+            {
+                timer_data.hou++;
+                timer_data.min = 0;
+            }
+            Update_Time(timer_data);
+        }
+        private void Label1_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = !timer1.Enabled;
+        }
+        // ================================================================
         const float item0_coef = 10000;
         const float item1_coef = 3000;
         const float item2_coef = 1000;
         const float item3_coef = 500;
         const float item4_coef = 300;
         const float item5_coef = 150;
-
         float item0 = 0;
         float item1 = 0;
         float item2 = 0;
@@ -31,9 +89,7 @@ namespace BlackDesert_GameCounter
         float item4 = 0;
         float item5 = 0;
         float total = 0;
-
         bool gen10K_enable = true;
-
         private void Count_Total()
         {
 
@@ -72,7 +128,6 @@ namespace BlackDesert_GameCounter
                 //MessageBox.Show("right");
             }
         }
-
         private void Lv0_MouseCkick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -86,7 +141,6 @@ namespace BlackDesert_GameCounter
             textBox1.Text = item0.ToString();
             Count_Total();
         }
-
         private void Lv1_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -100,7 +154,6 @@ namespace BlackDesert_GameCounter
             textBox2.Text = item1.ToString();
             Count_Total();
         }
-
         private void Lv2_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -114,7 +167,6 @@ namespace BlackDesert_GameCounter
             textBox3.Text = item2.ToString();
             Count_Total();
         }
-
         private void Lv3_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -128,7 +180,6 @@ namespace BlackDesert_GameCounter
             textBox4.Text = item3.ToString();
             Count_Total();
         }
-
         private void Lv4_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -142,7 +193,6 @@ namespace BlackDesert_GameCounter
             textBox5.Text = item4.ToString();
             Count_Total();
         }
-
         private void Lv5_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -156,11 +206,12 @@ namespace BlackDesert_GameCounter
             textBox6.Text = item5.ToString();
             Count_Total();
         }
-
         private void Gen10k_Click(object sender, EventArgs e)
         {
             gen10K_enable = !gen10K_enable;
             Count_Total();
         }
+        // ================================================================
+
     }
 }
