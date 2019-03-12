@@ -7,16 +7,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace BlackDesert_GameCounter
 {
     public partial class Form1 : Form
     {
+        string date;
+        StreamWriter logFile = new StreamWriter(@"log.txt", true);
+
         public Form1()
         {
             InitializeComponent();
             timer1.Interval = 1000;
             timer1.Enabled = false;
+
+            //第二個參數設定為true表示不覆蓋原本的內容，把新內容直接添加進去
+            
+            date += DateTime.Now.Year.ToString() + ".";
+            date += DateTime.Now.Month.ToString() + ".";
+            date += DateTime.Now.Day.ToString() + "-";
+
+            date += DateTime.Now.Hour.ToString()+":";
+            date += DateTime.Now.Minute.ToString()+":";
+            date += DateTime.Now.Second.ToString();
+            logFile.WriteLine(date);
+            logFile.Close();
         }
 
         // ================================================================
@@ -227,6 +243,11 @@ namespace BlackDesert_GameCounter
         {
             gen10K_enable = !gen10K_enable;
             Count_Total();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
 
 
