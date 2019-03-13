@@ -47,7 +47,10 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Bt_Start = new System.Windows.Forms.Button();
+            this.Bt_Reset = new System.Windows.Forms.Button();
+            this.Bt_Log = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -127,13 +130,12 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::BlackDesert_GameCounter.Properties.Resources.LVUser;
-            this.pictureBox7.Location = new System.Drawing.Point(402, 12);
+            this.pictureBox7.Location = new System.Drawing.Point(402, 9);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(146, 120);
+            this.pictureBox7.Size = new System.Drawing.Size(148, 129);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 6;
             this.pictureBox7.TabStop = false;
-            this.pictureBox7.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Bt_clear);
             // 
             // textBox1
             // 
@@ -204,10 +206,10 @@
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox7.Location = new System.Drawing.Point(143, 107);
+            this.textBox7.Location = new System.Drawing.Point(12, 107);
             this.textBox7.Name = "textBox7";
             this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(253, 25);
+            this.textBox7.Size = new System.Drawing.Size(384, 25);
             this.textBox7.TabIndex = 25;
             this.textBox7.Text = "0";
             this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -215,7 +217,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::BlackDesert_GameCounter.Properties.Resources.moneyUnit;
-            this.pictureBox8.Location = new System.Drawing.Point(402, 91);
+            this.pictureBox8.Location = new System.Drawing.Point(402, 97);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(36, 41);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -231,33 +233,66 @@
             // 
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(19, 105);
+            this.label1.Font = new System.Drawing.Font("微軟正黑體", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label1.Location = new System.Drawing.Point(393, 167);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 31);
+            this.label1.Size = new System.Drawing.Size(164, 45);
             this.label1.TabIndex = 27;
             this.label1.Text = "00:00:00";
             this.label1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Timer_MouseClick);
-            this.label1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.Timer_MouseDouClick);
             // 
-            // button1
+            // Bt_Start
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Image = global::BlackDesert_GameCounter.Properties.Resources.LVUser;
-            this.button1.Location = new System.Drawing.Point(175, 171);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(198, 97);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Bt_Start.Location = new System.Drawing.Point(400, 135);
+            this.Bt_Start.Name = "Bt_Start";
+            this.Bt_Start.Size = new System.Drawing.Size(51, 34);
+            this.Bt_Start.TabIndex = 28;
+            this.Bt_Start.Text = "開始";
+            this.Bt_Start.UseVisualStyleBackColor = true;
+            this.Bt_Start.Click += new System.EventHandler(this.Bt_Start_Click);
+            // 
+            // Bt_Reset
+            // 
+            this.Bt_Reset.Location = new System.Drawing.Point(450, 135);
+            this.Bt_Reset.Name = "Bt_Reset";
+            this.Bt_Reset.Size = new System.Drawing.Size(51, 34);
+            this.Bt_Reset.TabIndex = 29;
+            this.Bt_Reset.Text = "重新";
+            this.Bt_Reset.UseVisualStyleBackColor = true;
+            this.Bt_Reset.Click += new System.EventHandler(this.Bt_Reset_Click);
+            // 
+            // Bt_Log
+            // 
+            this.Bt_Log.Location = new System.Drawing.Point(500, 135);
+            this.Bt_Log.Name = "Bt_Log";
+            this.Bt_Log.Size = new System.Drawing.Size(51, 34);
+            this.Bt_Log.TabIndex = 30;
+            this.Bt_Log.Text = "紀錄";
+            this.Bt_Log.UseVisualStyleBackColor = true;
+            this.Bt_Log.Click += new System.EventHandler(this.Bt_Log_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("華康少女文字W5", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label2.Location = new System.Drawing.Point(12, 141);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(369, 38);
+            this.label2.TabIndex = 31;
+            this.label2.Text = "日期：0000/00/00 時間：00:00:00 \r\n道具：00:00:00:00:00:00 總計：0000萬";
+            this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(560, 329);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(560, 213);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.Bt_Log);
+            this.Controls.Add(this.Bt_Reset);
+            this.Controls.Add(this.Bt_Start);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.textBox7);
@@ -277,7 +312,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "BlackDesert_GameCounter      By Charlotte.HonG";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -310,7 +344,10 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Bt_Start;
+        private System.Windows.Forms.Button Bt_Reset;
+        private System.Windows.Forms.Button Bt_Log;
+        private System.Windows.Forms.Label label2;
     }
 }
 
