@@ -50,7 +50,6 @@
             this.Bt_Start = new System.Windows.Forms.Button();
             this.Bt_Reset = new System.Windows.Forms.Button();
             this.Bt_Log = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -64,7 +63,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::BlackDesert_GameCounter.Properties.Resources.LV5;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(7, 7);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(59, 58);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -75,7 +74,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::BlackDesert_GameCounter.Properties.Resources.LV4;
-            this.pictureBox2.Location = new System.Drawing.Point(77, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(72, 7);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(59, 58);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -86,7 +85,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::BlackDesert_GameCounter.Properties.Resources.LV3;
-            this.pictureBox3.Location = new System.Drawing.Point(142, 12);
+            this.pictureBox3.Location = new System.Drawing.Point(137, 7);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(59, 58);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -97,7 +96,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::BlackDesert_GameCounter.Properties.Resources.LV2;
-            this.pictureBox4.Location = new System.Drawing.Point(207, 12);
+            this.pictureBox4.Location = new System.Drawing.Point(202, 7);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(59, 58);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -108,7 +107,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::BlackDesert_GameCounter.Properties.Resources.LV1;
-            this.pictureBox5.Location = new System.Drawing.Point(272, 12);
+            this.pictureBox5.Location = new System.Drawing.Point(267, 7);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(59, 58);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -119,7 +118,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::BlackDesert_GameCounter.Properties.Resources.LV0;
-            this.pictureBox6.Location = new System.Drawing.Point(337, 12);
+            this.pictureBox6.Location = new System.Drawing.Point(332, 7);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(59, 58);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -130,9 +129,9 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::BlackDesert_GameCounter.Properties.Resources.LVUser;
-            this.pictureBox7.Location = new System.Drawing.Point(402, 9);
+            this.pictureBox7.Location = new System.Drawing.Point(397, 7);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(148, 129);
+            this.pictureBox7.Size = new System.Drawing.Size(145, 120);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 6;
             this.pictureBox7.TabStop = false;
@@ -140,7 +139,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox1.Location = new System.Drawing.Point(12, 76);
+            this.textBox1.Location = new System.Drawing.Point(7, 71);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(58, 25);
@@ -151,7 +150,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox2.Location = new System.Drawing.Point(77, 76);
+            this.textBox2.Location = new System.Drawing.Point(72, 71);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(58, 25);
@@ -162,7 +161,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox3.Location = new System.Drawing.Point(143, 76);
+            this.textBox3.Location = new System.Drawing.Point(138, 71);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(58, 25);
@@ -173,7 +172,7 @@
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox4.Location = new System.Drawing.Point(208, 76);
+            this.textBox4.Location = new System.Drawing.Point(203, 71);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(58, 25);
@@ -184,7 +183,7 @@
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox5.Location = new System.Drawing.Point(273, 76);
+            this.textBox5.Location = new System.Drawing.Point(268, 71);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(58, 25);
@@ -195,7 +194,7 @@
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox6.Location = new System.Drawing.Point(337, 76);
+            this.textBox6.Location = new System.Drawing.Point(332, 71);
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(58, 25);
@@ -206,7 +205,7 @@
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.textBox7.Location = new System.Drawing.Point(12, 107);
+            this.textBox7.Location = new System.Drawing.Point(6, 102);
             this.textBox7.Name = "textBox7";
             this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(384, 25);
@@ -217,7 +216,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::BlackDesert_GameCounter.Properties.Resources.moneyUnit;
-            this.pictureBox8.Location = new System.Drawing.Point(402, 97);
+            this.pictureBox8.Location = new System.Drawing.Point(397, 86);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(36, 41);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -235,7 +234,7 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("微軟正黑體", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(393, 167);
+            this.label1.Location = new System.Drawing.Point(388, 170);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(164, 45);
@@ -245,7 +244,7 @@
             // 
             // Bt_Start
             // 
-            this.Bt_Start.Location = new System.Drawing.Point(400, 135);
+            this.Bt_Start.Location = new System.Drawing.Point(397, 133);
             this.Bt_Start.Name = "Bt_Start";
             this.Bt_Start.Size = new System.Drawing.Size(51, 34);
             this.Bt_Start.TabIndex = 28;
@@ -255,7 +254,8 @@
             // 
             // Bt_Reset
             // 
-            this.Bt_Reset.Location = new System.Drawing.Point(450, 135);
+            this.Bt_Reset.Enabled = false;
+            this.Bt_Reset.Location = new System.Drawing.Point(447, 133);
             this.Bt_Reset.Name = "Bt_Reset";
             this.Bt_Reset.Size = new System.Drawing.Size(51, 34);
             this.Bt_Reset.TabIndex = 29;
@@ -265,7 +265,7 @@
             // 
             // Bt_Log
             // 
-            this.Bt_Log.Location = new System.Drawing.Point(500, 135);
+            this.Bt_Log.Location = new System.Drawing.Point(497, 133);
             this.Bt_Log.Name = "Bt_Log";
             this.Bt_Log.Size = new System.Drawing.Size(51, 34);
             this.Bt_Log.TabIndex = 30;
@@ -273,23 +273,11 @@
             this.Bt_Log.UseVisualStyleBackColor = true;
             this.Bt_Log.Click += new System.EventHandler(this.Bt_Log_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("華康少女文字W5", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label2.Location = new System.Drawing.Point(12, 141);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(369, 38);
-            this.label2.TabIndex = 31;
-            this.label2.Text = "日期：0000/00/00 時間：00:00:00 \r\n道具：00:00:00:00:00:00 總計：0000萬";
-            this.label2.Click += new System.EventHandler(this.Label2_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(560, 213);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(553, 214);
             this.Controls.Add(this.Bt_Log);
             this.Controls.Add(this.Bt_Reset);
             this.Controls.Add(this.Bt_Start);
@@ -347,7 +335,6 @@
         private System.Windows.Forms.Button Bt_Start;
         private System.Windows.Forms.Button Bt_Reset;
         private System.Windows.Forms.Button Bt_Log;
-        private System.Windows.Forms.Label label2;
     }
 }
 

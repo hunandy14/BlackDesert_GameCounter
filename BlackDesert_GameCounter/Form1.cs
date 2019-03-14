@@ -42,6 +42,12 @@ namespace BlackDesert_GameCounter
         float total = 0;
 
         bool gen10K_enable = true;
+        bool started_enable = false;
+        private void Set_Restart_Status()
+        {
+                timer1.Enabled = started_enable;
+                Bt_Reset.Enabled = !started_enable;
+        }
 
         // ================================================================
         private void SaveLog()
@@ -57,9 +63,9 @@ namespace BlackDesert_GameCounter
             logDate += DateTime.Now.Second.ToString() + ", ";
 
             logDate += "gameTime";
-            logDate += timer_data.hou.ToString() + ":";
-            logDate += timer_data.min.ToString() + ":";
-            logDate += timer_data.sec.ToString();
+            logDate += (timer_data.hou).ToString() + ":";
+            logDate += (timer_data.min).ToString() + ":";
+            logDate += (timer_data.sec).ToString() + ", ";
 
             logDate += item0.ToString() + ", ";
             logDate += item1.ToString() + ", ";
@@ -141,7 +147,15 @@ namespace BlackDesert_GameCounter
         }
         private void Bt_Start_Click(object sender, EventArgs e)
         {
-            timer1.Enabled = !timer1.Enabled;
+            started_enable = !started_enable;
+            if (started_enable)
+            {
+                Bt_Start.Text = "暫停";
+            } else
+            {
+                Bt_Start.Text = "開始";
+            }
+            Set_Restart_Status();
         }
         // ================================================================
 
@@ -168,6 +182,8 @@ namespace BlackDesert_GameCounter
         }
         private void Lv0_MouseCkick(object sender, MouseEventArgs e)
         {
+            if (started_enable == false) return;
+
             if (e.Button == MouseButtons.Left)
             {
                 ++item0;
@@ -181,6 +197,8 @@ namespace BlackDesert_GameCounter
         }
         private void Lv1_MouseClick(object sender, MouseEventArgs e)
         {
+            if (started_enable == false) return;
+
             if (e.Button == MouseButtons.Left)
             {
                 ++item1;
@@ -194,6 +212,8 @@ namespace BlackDesert_GameCounter
         }
         private void Lv2_MouseClick(object sender, MouseEventArgs e)
         {
+            if (started_enable == false) return;
+
             if (e.Button == MouseButtons.Left)
             {
                 ++item2;
@@ -207,6 +227,8 @@ namespace BlackDesert_GameCounter
         }
         private void Lv3_MouseClick(object sender, MouseEventArgs e)
         {
+            if (started_enable == false) return;
+
             if (e.Button == MouseButtons.Left)
             {
                 ++item3;
@@ -220,6 +242,8 @@ namespace BlackDesert_GameCounter
         }
         private void Lv4_MouseClick(object sender, MouseEventArgs e)
         {
+            if (started_enable == false) return;
+
             if (e.Button == MouseButtons.Left)
             {
                 ++item4;
@@ -233,6 +257,8 @@ namespace BlackDesert_GameCounter
         }
         private void Lv5_MouseClick(object sender, MouseEventArgs e)
         {
+            if (started_enable == false) return;
+
             if (e.Button == MouseButtons.Left)
             {
                 ++item5;
@@ -252,7 +278,7 @@ namespace BlackDesert_GameCounter
 
         private void Bt_Reset_Click(object sender, EventArgs e)
         {
-            if (timer1.Enabled == false)
+            if (started_enable == false)
             {
                 SaveLog();
 
@@ -270,6 +296,8 @@ namespace BlackDesert_GameCounter
                 timer_data.min = 0;
                 timer_data.sec = 0;
                 Update_Time(timer_data);
+
+                Bt_Reset.Enabled = false;
             }
         }
 
